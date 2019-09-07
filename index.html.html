@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Uzoezie Chiemerie</title>
+   <meta name="viewport" content="width=device-width, initia-scale=1">
+   <script type="text/javascript">
+      <!--
+      // Form validation code will come here.
+      function validate() {
+      
+         if( document.myForm.Name.value == "" ) {
+            alert( "Please provide your name!" );
+            document.myForm.Name.focus() ;
+            return false;
+         }
+         if( document.myForm.EMail.value == "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+         if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+            document.myForm.Zip.value.length != 5 ) {
+            
+            alert( "Please provide a zip in the format #####." );
+            document.myForm.Zip.focus() ;
+            return false;
+         }
+         return( true );
+      }
+   //-->
+</script>
+  <script type = "text/javascript">
+   <!--
+      function validateEmail() {
+         var emailID = document.myForm.EMail.value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");
+         
+         if (atpos < 1 || ( dotpos - atpos < 2 )) {
+            alert("Please enter correct email ID")
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+         return( true );
+      }
+   //-->
+</script>
+
+   <style> 
+    body {
+      background-color: linen;
+    }
+    h1 {
+      color: maroon;
+      text-align: center
+      font: serif;
+    }
+    pre {
+      text-align: top;
+      margin-top: 60px;
+    }
+    h3 {
+      color: cyan;
+      margin-left: 40px;
+      font-family: serif;
+    }
+    h4 {
+      font-family: monospace;
+      font-size: 15px;
+      color: orange;
+    }
+    body {font-family: Arial, Helvetica, Sans-serif;}
+    * {box-sizing: border-box;}
+
+    input[type=text], select, textarea{
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top:6px;
+      margin-bottom:16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+   </style>
+  </head>
+  <img src="https://res.cloudinary.com/djxrpbpew/image/upload/v1566979792/chiemerie_pics-02-40_bsaksc.bmp" alt="chiemerie_pics" width="225" height="155">
+  <body>  
+   <table>
+    <tr>
+     <td><h1 style="text-align: center;">Uzoezie Chiemerie CV</h1></td>
+     <td>
+      <pre>
+       No.15 Prince Erhirhe street, Isashi
+       Ojo, Lagos State, Nigeria.
+       <strong>+2348124441875</strong>
+       <strong><a href="st.benedict13@gmail.com">st.benedict13@gmail.com</a></strong>
+      </pre> 
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <h3 style="color:lightgray;"><strong>EXPERIENCE</strong></h3>
+      <h4><strong>Freecodecamp-Learner</strong></h4>
+       <p>
+        January 2019-Till date
+        Still learning HTML and CSS basics
+       </p>
+      <h4><strong>Codecademy-Learner</strong></h4>
+       <p>
+        January 2019-Till date
+        Still learning Html and CSS basics
+       </p>
+     </td>
+     <td>
+      <h3><strong>SKILLS</strong></h3>
+       <ol>
+          <li>High atention to detail</li>
+          <li>Hadworking</li> 
+          <li>Result oriented</li>      
+       </ol>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      <h3 style="color:tomato;"><strong>EDUCATION</strong></h3>
+      <h4 style="color:slateblue"><strong>Command Day Secondary School Ojo (CDSS)</strong>,<br>Lagos,Nigeria</br></h4>
+       <p>
+        september 2015-Till date
+       </p>
+     </td>
+     <td>
+      <h3><strong>PROJECTS</strong></h3>
+      <h4><strong>Built a fashion blog</strong>for Isa</h4>
+       <p>
+        I built a fashion blog for Isa on codecademy 
+       </p>
+     </td>
+    </tr>
+    <tr> 
+     <td>
+      <h3><strong>AWARDS</strong></h3>
+      <h4><strong>The overall best in mathematics</strong></h4>
+       <p>
+        I won the overall best in mathematics in Jss2
+       </p>
+     </td>
+     <td>
+      <h3><strong>LANGUAGE</strong></h3>
+       <p>mainly English and Igbo</p>
+     </td>  
+    </tr>
+   </table>
+     <div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name.." maxlength="4"required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." maxlength="4"required>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email address.."required> 
+
+    <label for="title">Title</label>
+    <input type="text" id="title" name="title" placeholder="Your title.."required>
+      
+    <label for="message">Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" maxlength="20"required></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+  </body>
+ </html> 

@@ -1,0 +1,18 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: Roboto;
+}
+.intro-container{
+	background-color: #e9e8e4;
+}
+.logo{
+	font-family:sans-serif;
+	padding: 10px;
+}.intro-speech{
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+.intro-speech .name{
+	color: red;
+}
